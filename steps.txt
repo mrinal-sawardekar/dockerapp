@@ -1,0 +1,14 @@
+Start with Centos Runtime
+centos:7
+update all the current packages
+  yum -y update
+Install apache php php-gd php-mysql
+  yum -y install httpd php php-gd php-mysql
+Configure apache httpd.conf
+  
+Copy the code from code folder
+ /var/www/html
+Set DB env variables
+
+start apache
+ httpd -D FOREGROUND
